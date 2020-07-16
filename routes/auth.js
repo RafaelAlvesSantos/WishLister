@@ -52,4 +52,8 @@ router.post("/", async (req, res) => {
   }
 });
 
+// To add user to friends list
+// const userToAdd = await User.findOne({ email: "rafael@gmail.com" });
+// user.friends.push(userToAdd);
+
 module.exports = router;

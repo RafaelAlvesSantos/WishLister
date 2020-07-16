@@ -17,6 +17,12 @@ const UserSchema = mongoose.Schema({
   birthDate: {
     type: String,
   },
+  friends: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "users",
+    },
+  ],
 });
 
 module.exports = mongoose.model("user", UserSchema);
