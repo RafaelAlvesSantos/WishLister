@@ -1,4 +1,3 @@
-const mongoose = require("mongoose");
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
@@ -33,7 +32,7 @@ router.post("/", async (req, res) => {
       { expiresIn: 3600 },
       (err, token) => {
         if (err) throw err;
-        res.status(200).json(token);
+        res.status(200).json({ token });
       }
     );
   } catch (err) {
