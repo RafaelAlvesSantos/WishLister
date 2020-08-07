@@ -17,6 +17,7 @@ const UserSchema = mongoose.Schema({
   birthDate: {
     type: String,
   },
+  wishlist: [],
   friends: [
     {
       type: mongoose.Schema.Types.ObjectId,
