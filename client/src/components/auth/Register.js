@@ -14,6 +14,7 @@ const Register = () => {
       setAlert(error, "danger");
       clearErrors();
     }
+    //eslint-disable-next-line
   }, [error]);
 
   const [user, setUser] = useState({
